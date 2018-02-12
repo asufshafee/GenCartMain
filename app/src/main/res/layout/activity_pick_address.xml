@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_toolbar" />
+
+
+        <android.support.v4.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#eb000000"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_30sdp">
+
+                        <TextView
+                            android:id="@+id/tvNameTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textColor="@color/color_white" />
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tvNameTxt"
+                            android:layout_marginLeft="@dimen/_35sdp"
+                            android:layout_toRightOf="@id/tvNameTxt"
+                            android:text=""
+                            android:textColor="@color/color_white" />
+
+                        <View
+                            android:id="@+id/div2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/tvName"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:layout_toRightOf="@id/tvNameTxt"
+                            android:background="@color/color_green" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/r1"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/tvMobileTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile"
+                            android:textColor="@color/color_white" />
+
+                        <TextView
+                            android:id="@+id/tvMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:layout_toRightOf="@id/tvMobileTxt"
+                            android:text=""
+                            android:textColor="@color/color_white" />
+
+                        <View
+                            android:id="@+id/div3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/tvMobile"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:layout_toRightOf="@id/tvMobileTxt"
+                            android:background="@color/color_green"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/r2"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/tvEmailTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="@color/color_white" />
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_36sdp"
+                            android:layout_toRightOf="@id/tvEmailTxt"
+                            android:text=""
+                            android:textColor="@color/color_white" />
+
+                        <View
+                            android:id="@+id/div4"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/tvEmail"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:layout_toRightOf="@id/tvEmailTxt"
+                            android:background="@color/color_green" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAddAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/round_rect"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_18sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:background="@drawable/plus_icon" />
+
+                    <Button
+                        android:id="@+id/btnAddAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@android:color/transparent"
+                        android:text="ADD ADDRESS"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/color_garay"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_addressList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iconGoNext"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_27sdp"
+        android:src="@drawable/forward_next" />
+</FrameLayout>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="The best way to shop for groceries"
+                android:textColor="@color/color_light_gray"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutFname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:backgroundTint="@color/color_light_gray"
+                        android:hint="Name"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_green"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:theme="@style/MyEditText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="0.5dp"
+                       android:background="@color/color_dark_gray" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutLname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:backgroundTint="@color/color_light_gray"
+                        android:hint="Last Name"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_green"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:theme="@style/MyEditText" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="0.5dp"
+                      android:background="@color/color_dark_gray" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:backgroundTint="@color/color_light_gray"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_green"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:theme="@style/MyEditText" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:backgroundTint="@color/color_light_gray"
+                        android:hint="Email"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_green"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:theme="@style/MyEditText" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            //------------------------------------------------------------
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:backgroundTint="@color/color_light_gray"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_green"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:theme="@style/MyEditText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_dark_gray" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutRePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtRePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:backgroundTint="@color/color_light_gray"
+                        android:hint="Re-Enter Password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_sky_blue"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:theme="@style/MyEditText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--      <View
+                          android:layout_width="match_parent"
+                          android:layout_height="0.5dp"
+                          android:background="@color/color_dark_gray" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:backgroundTint="@color/color_light_gray"
+                        android:hint="Address"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_green"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:theme="@style/MyEditText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="0.5dp"
+                       android:background="@color/color_dark_gray" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutZip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtZipCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:backgroundTint="@color/color_light_gray"
+                        android:hint="Zipcode"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_sky_blue"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:theme="@style/MyEditText" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_below="@+id/et_password"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:background="@drawable/btn_shape_green"
+                    android:text="SIGNUP"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
